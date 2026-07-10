@@ -1,0 +1,1001 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f9f9f9;
+}
+
+/* HEADER */
+.yt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: red;
+}
+
+
+.yt-sidebar {
+    width: 200px;
+    background: red;   /* ⚫ black background */
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    padding: 10px;
+    border-right: 1px solid #222;
+}
+
+.yt-sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;          /* 🔴 red text */
+    font-weight: bold;
+}
+
+/* hover effect */
+.yt-sidebar a:hover {
+    background: black;
+    color: white;
+}
+
+/* MAIN */
+.yt-main {
+    margin-left: 220px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* VIDEO GRID */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.video-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* LOADING BAR */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: red;
+    z-index: 9999;
+    transition: 0.2s;
+}
+
+/* for top header */
+
+.yt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* CENTER TITLE */
+.yt-center-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    white-space: nowrap;
+    
+}
+
+/*searchbar center */
+.yt-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* TITLE */
+.yt-center-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* SEARCH */
+.yt-search {
+    display: flex;
+    justify-content: center;
+}
+
+.yt-search input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.yt-search button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/*red+black theme */
+.video-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: black;   /* ⚫ black background */
+    padding: 12px;
+    margin-top: 80px; /* header ke niche spacing */
+}
+
+/* LINKS */
+.video-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.video-menu a:hover {
+    background: red;   /* 🔴 red highlight */
+    color: white;
+}
+
+/* ACTIVE PAGE LOOK (optional manual) */
+.video-menu a.active {
+    background: red;
+}
+
+/* dashboarad ka color change karna */
+.sidebar {
+    position: fixed;
+    top: 80px;   /* header ke niche */
+    left: 0;
+    width: 180px;
+    height: 100vh;
+    background: black;   /* ⚫ black background */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+/* LINKS */
+.sidebar a {
+    color: red;          /* 🔴 red font */
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.sidebar a:hover {
+    background: red;
+    color: white;
+}
+
+.yt-main, .video-grid, .upload-form {
+    margin-left: 200px;
+}
+
+.sidebar a {
+    color: red !important;
+    background: black !important;
+}
+/* creative homepage */
+
+.yt-home {
+    margin-left: 220px;
+    padding: 70px;
+}
+
+.home-title {
+    font-size: 34px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* VIDEO GRID */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* VIDEO CARD */
+.video-card {
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+/* VIDEO */
+.video-card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/*for needed changes*/
+.upload-title {
+    color: red;
+    margin-left: 220px;
+    text-align: center;
+}
+
+.upload-box {
+    margin-left: 220px;
+    padding: 20px;
+    width: 300px;
+    background: #111;
+    border-radius: 10px;
+    color: white;
+}
+
+.file-label {
+    display: block;
+    background: red;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file-label input {
+    display: none;
+}
+
+.upload-btn {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/*profile css*/
+.profile-box {
+    margin-left: 220px;
+    padding: 20px;
+    background: #111;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+}
+/*dashboard ka css*/
+.dashboard-box {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/*cleancss*/
+.upload-box {
+    margin-left: 300px; /* sidebar adjust */
+    margin-top: 50px;
+    padding: 20px;
+    width: 320px;
+    background: #111;
+    border-radius: 10px;
+    color: white;
+}
+
+.upload-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.file-label {
+    display: block;
+    background: red;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file-label input {
+    display: none;
+}
+
+.upload-btn {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/* animated upload video title effect*/
+.upload-title {
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    margin-top: 20px;
+    animation: slideDown 0.8s ease-out;
+}
+
+/* animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* glow effect youtube */
+.upload-title {
+    text-shadow: 0 0 10px red, 0 0 20px rgb(53, 4, 4);
+}
+
+.upload-btn {
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+/* to change bairan color*/
+.video-card a {
+    text-decoration: none; /* underline remove */
+}
+
+.video-card h3 {
+    color: rgb(161, 31, 31); /* ya jo color chahiye */
+}
+
+/* important for visited links */
+.video-card a:visited {
+    color: rgb(177, 22, 22);
+}
+
+.video-card a:link {
+    color: rgb(168, 20, 20);
+}
+.video-card h3 {
+    color: red;
+}
+
+.video-card a:visited {
+    color: red;
+}
+/* css for description box*/
+.upload-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+/* admin UI*/
+.admin-video {
+    background: #111;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+/* video size fix*/
+.watch-container {
+    margin-left: 250px;   /* sidebar ke hisaab se adjust */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+.watch-container video {
+    width: 800px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* text align center*/
+.video-title {
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+}
+
+.video-desc {
+    text-align: center;
+    max-width: 800px;
+}
+/* like- comments align */
+.like-btn {
+    margin-top: 10px;
+}
+
+.comment-box {
+    margin-top: 15px;
+    text-align: center;
+}
+.video-title {
+    color: red;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.like-btn {
+    margin: 10px 0;
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-box {
+    margin-top: 15px;
+}
+
+.comment-box input {
+    padding: 8px;
+    width: 300px;
+}
+
+.comment {
+    margin-top: 10px;
+}
+/* main magic*/
+.watch-container {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* 🔥 SAME WIDTH FOR EVERYTHING */
+.video-box {
+    width: 800px;
+    margin: 0 auto;  /* center */
+}
+
+/* VIDEO */
+.video-box video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TITLE CENTERED */
+.video-title {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+
+/* DESCRIPTION */
+.video-desc {
+    text-align: center;
+}
+
+/* LIKE BUTTON CENTER */
+.like-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    border: none;
+}
+
+/* COMMENT BOX CENTER */
+.comment-box {
+    text-align: center;
+}
+
+.comment-box input {
+    width: 70%;
+    padding: 8px;
+}
+
+.comment-box button {
+    padding: 8px;
+}
+
+/* COMMENTS LEFT (like YouTube) */
+.comment {
+    margin-top: 10px;
+}
+
+/* login*/
+/* BACKGROUND */
+body {
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* CARD BOX */
+.auth-box {
+    width: 350px;
+    margin: 80px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* HEADING */
+.auth-box h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* INPUT FIELDS */
+.auth-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* INPUT FOCUS */
+.auth-box input:focus {
+    border-color: red;
+}
+
+/* BUTTON */
+.auth-box button {
+    width: 95%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* HOVER EFFECT */
+.auth-box button:hover {
+    background: darkred;
+}
+
+/* LINK TEXT */
+.auth-box p {
+    margin-top: 15px;
+}
+/* premium CSS*/
+/* MAIN CONTAINER */
+.login-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* LEFT SIDE */
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, red, darkred);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.login-left h1 {
+    font-size: 40px;
+}
+
+.login-left p {
+    margin-top: 10px;
+}
+
+/* RIGHT SIDE */
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+/* CARD */
+.login-card {
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* TITLE */
+.login-card h2 {
+    margin-bottom: 20px;
+    color: red;
+}
+
+/* INPUT GROUP */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* FLOAT LABEL */
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #999;
+    transition: 0.3s;
+    background: white;
+    padding: 0 5px;
+}
+
+/* FLOAT EFFECT */
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: red;
+}
+
+/* BUTTON */
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: darkred;
+}
+
+/* SHOW PASSWORD */
+.toggle-pass {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* LINK */
+.login-card a {
+    color: red;
+    text-decoration: none;
+}
+.login-right {
+    background: #f9f9f9;
+}
+.login-left {
+    color: white;
+}
+
+.login-card {
+    background: white;
+    color: black;
+}
+
+.login-card input {
+    color: black;
+}
+
+
+.header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    border-bottom: 2px solid red;
+    z-index: 1000;
+}
+
+/* LEFT */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* CENTER */
+.header-center form {
+    display: flex;
+}
+
+.search-box {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* RIGHT */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.logout-btn {
+    padding: 6px 12px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* CREATE ACCOUNT KA CSS*/
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Background */
+.register-container {
+    height: calc(100vh - 70px); /* header ke niche */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e1e2f, #2c2c54);
+}
+
+/* Box */
+.register-box {
+    width: 400px;
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Heading */
+.register-box h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.register-box input,
+.register-box select,
+.register-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Button */
+.register-box button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-box button:hover {
+    background: #e60000;
+}
+
+/* Bottom text */
+.register-box p {
+    color: white;
+    margin-top: 10px;
+}
+
+.register-box a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+/* upload box*/
+/* MAIN LAYOUT */
+.upload-container{
+    display:flex;
+    padding:20px;
+}
+
+/* LEFT SIDE */
+.left-section{
+    width:30%;
+    padding:10px;
+}
+
+.left-section h3{
+    margin-bottom:15px;
+}
+
+/* VIDEO CARD */
+.video-card{
+    background:#0f0b0b;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.video-card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.video-card h4{
+    margin:5px 0;
+}
+
+/* RIGHT SIDE */
+.right-section{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* TITLE CENTER */
+.title{
+    text-align:center;
+    margin-bottom:20px;
+    color:red;
+}
+
+/* UPLOAD BOX */
+.upload-box{
+    width:350px;
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(255,0,0,0.4);
+}
+
+/* INPUTS */
+.upload-box input,
+.upload-box textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+/* FILE LABEL */
+.upload-box label{
+    display:block;
+    margin:10px 0;
+    color:white;
+}
+
+/* BUTTON */
+.upload-box button{
+    width:100%;
+    padding:12px;
+    background:red;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.upload-box button:hover{
+    background:#cc0000;
+}
+
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    object-fit:cover;
+}
+
+.logo span{
+    font-size:24px;
+    font-weight:bold;
+    color:#ff0000;
+    white-space:nowrap;
+}
+
+
+.video-card h3{
+    color:black !important;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+    display:block;
+    text-align:left;
+}
+
+.video-card h3{
+    color:white !important;
+}
